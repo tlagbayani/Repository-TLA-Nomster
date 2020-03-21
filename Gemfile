@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem "puma", ">= 3.12.3"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -65,8 +65,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'jquery-rails'
 
-gem 'popper_js', '~> 1.11.1'
-gem 'bootstrap', '4.0.0.alpha6'
+gem "loofah", ">= 2.3.1"
+gem "rack", ">= 2.0.8"
+
+gem 'popper_js', '< 2', '>= 1.14.3'
+gem "bootstrap", ">= 4.3.1"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
@@ -77,8 +80,13 @@ gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 
 gem 'simple_form'
 gem 'font-awesome-rails'
-gem 'devise'
+gem "devise", ">= 4.7.1" 
 gem 'geocoder'
 gem 'figaro'
 gem 'carrierwave', '~> 1.0'
 gem  'fog-aws'
+
+gem "nokogiri", ">= 1.10.8"
+
+gem "actionview", ">= 5.2.4.2"
+gem "excon", ">= 0.71.0"
